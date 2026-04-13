@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Pro | Attendance Mastery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="robot-bg">🤖</div>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="brand">ATTENDANCE, <span class="accent">DHRUV PATEL : 178</span></div>
+            <div class="nav-actions">
+                <button id="undoBtn" class="nav-btn" title="Undo Action">↩</button>
+                <button id="redoBtn" class="nav-btn" title="Redo Action">↪</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="section-header">
+            <h3>Executive Overview</h3>
+            <span class="sub-label">Semester, Monthly, and Weekly thresholds (Holidays Excluded)</span>
+        </div>
+        <section id="summaryDashboard" class="hero-grid"></section>
+        
+        <div class="section-header">
+            <h3>Subject Analytics</h3>
+            <span class="sub-label">Real-time bunk availability and safe margins</span>
+        </div>
+        <section id="statsContainer" class="subject-grid"></section>
+
+        <div class="section-header">
+            <h3>Attendance Vault</h3>
+            <span class="sub-label">Manage archives, holidays, and mass bunks</span>
+        </div>
+        <div id="nestedLogsContainer" class="vault"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
